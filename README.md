@@ -138,6 +138,8 @@ To control in local.settings.json:
 "AzureFunctionsJobHost:logging:logLevel:Function.HttpTrigger2.User": "Information"
 ```
 
+There's no way to configure levels for all user-initiated logs in a single settings.
+
 ## Common settings
 
 ### Disable all except user-initiated logs
