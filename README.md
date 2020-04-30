@@ -1,6 +1,6 @@
 # Azure Functions - suppressing logs
 
-Logging from Azure Functions Core Tools and Host can be quite verbose. Documenting different ways to suppress the logs.
+Logging from Azure Functions Core Tools and Host can be quite verbose. Documenting different ways to suppress the logs here.
 
 Some logs from the Azure Functions Job Host can be disabled in **host.json**, while others cannot.
 
@@ -16,6 +16,8 @@ All log settings can be configured with app settings. In the below examples, any
   }
 }
 ```
+
+Theoretically they can be configured with environment variables too, but unfortunately `.` are not valid bash variable names (`:` can be substituted with `__`).
 
 ## Individual settings
 
