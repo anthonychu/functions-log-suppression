@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+
+    "logging:logLevel:Microsoft": "None",
+    "logging:logLevel:Worker": "None",
+    "AzureFunctionsJobHost:logging:logLevel:default": "None",
+    "AzureFunctionsJobHost:logging:logLevel:Host.Function.Console": "Information",
+    "AzureFunctionsJobHost:logging:logLevel:Function.HttpTrigger1.User": "Information",
+    "AzureFunctionsJobHost:logging:logLevel:Function.HttpTrigger2.User": "Information",
+    
+    "APPINSIGHTS_INSTRUMENTATIONKEY": ""
+  }
+}
