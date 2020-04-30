@@ -142,9 +142,9 @@ There's no way to configure levels for all user-initiated logs in a single setti
 
 ## Common settings
 
-### Disable all except user-initiated logs
+### Disable everything except user-initiated logs
 
-Each function must be listed explicitly.
+Note that each function must be listed explicitly. This can be a problem if you add a function and forget to add it here.
 
 #### local.settings.json values
 
