@@ -4,7 +4,7 @@ Logging from Azure Functions Core Tools and Host can be quite verbose. Documenti
 
 Some logs from the Azure Functions Job Host can be disabled in **host.json**, while others cannot.
 
-All log settings can be configured with app settings. In the below examples, anything prefixed with `AzureFunctionsJobHost` can also be placed in host.json like this:
+All log settings can be configured with app settings. In the below examples, anything prefixed with `AzureFunctionsJobHost` can also be placed in host.json. For example, `AzureFunctionsJobHost:logging:logLevel:default` can be configured like this in host.json:
 
 ```json
 {
@@ -40,7 +40,7 @@ To suppress in local.settings.json:
 "AzureFunctionsJobHost:logging:logLevel:Function.HttpTrigger1": "None"
 ```
 
-> Note that this also suppresses logs in subcategories. This includes user-initiated logs that were output in code using the default logger. See below for how to suppress these host generated logs but keep the user generated ones.
+Note that this also suppresses logs in subcategories. This includes user-initiated logs that are output in code using the default logger. See below for how to suppress these host generated logs but keep the user generated ones.
 
 ### Worker
 
